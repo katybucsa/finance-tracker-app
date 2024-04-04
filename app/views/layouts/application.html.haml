@@ -11,7 +11,7 @@
 
   %body
     %nav.navbar.navbar-expand-lg.bg-body-tertiary
-      .container-fluid
+      %div.container
         %a.navbar-brand{href: "#"} Navbar
         %button.navbar-toggler{"aria-controls" => "navbarSupportedContent", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-bs-target" => "#navbarSupportedContent", "data-bs-toggle" => "collapse", type: "button"}
           %span.navbar-toggler-icon
@@ -39,6 +39,7 @@
             %input.form-control.me-2{"aria-label" => "Search", placeholder: "Search", type: "search"}/
             %button.btn.btn-outline-success{type: "submit"} Search
 
-    %p.notice= notice
-    %p.alert= alert
-    = yield
+    %div.container
+      %p.notice= notice
+      %p.alert= alert
+      = yield
