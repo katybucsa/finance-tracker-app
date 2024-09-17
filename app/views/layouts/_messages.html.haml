@@ -1,0 +1,9 @@
+- if notice
+  %div.alert.alert-success.alert-dismissible{role: 'alert'}
+    %div= notice
+    %button.btn-close{'aria-label': 'Close', 'data-bs-dismiss': 'alert', 'type': 'button'}
+
+- if alert
+  %div.alert.alert-danger.alert-dismissible.fade.show{role: 'alert'}
+    %div= alert
+    %button.btn-close{'aria-label': 'Close', 'data-bs-dismiss': 'alert', 'type': 'button'}
