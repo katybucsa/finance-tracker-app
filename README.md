@@ -23,4 +23,5 @@ Add Bootstrap 5 to Rails 7 app (sass)
 5. Run the following commands:
     ```
     bundle install
+    rails assets:precompile
     ```
